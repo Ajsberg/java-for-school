@@ -1,17 +1,53 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        //System.out.printf("Hello and welcome!");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        //System.out.print("Nasza lekcja");
+        //System.out.println("Hey");
+
+        //Liczbowe
+        //int i = 9;
+        //int t = 11;
+        //int f = i + t;
+        Integer integer = null;
+
+        Long l = 9L;
+        long l2 = 9L;
+
+        Double d = 2.0;
+        double a = 5.6;
+        double b = 3.7;
+        double c = Math.pow(a,b);
+
+        //True/False
+
+        Boolean bol = true;
+        boolean b2 = false;
+
+        //Tekst
+
+        String s = "Hello World!";
+        String u = "";
+        String zTekstem = "Z tekstem";
+        String zNullem = null;
+
+        if(zNullem!=null) {
+            System.out.println(zNullem.isEmpty());
+        } else {
+            System.out.println("To NULL");
+        }
+        //System.out.println(s.toUpperCase());
+        //System.out.println(s.toLowerCase());
+        //System.out.println(u.isEmpty());
+        //System.out.println(zTekstem.isEmpty());
+
+        if (zTekstem!=null && zTekstem.isEmpty()==false){
+            System.out.println(zTekstem.toUpperCase());
+        }else{
+            System.out.println("Zawartość to NULL lub jest pusta");
+        }
         }
     }
-}
